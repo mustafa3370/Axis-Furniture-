@@ -19,6 +19,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    --section-padding: 60px;
     
 }
 :root{
@@ -136,6 +137,10 @@ font-weight: 500;
 
 /* home */
 /*about*/
+.about{
+  padding: 0;
+  margin-bottom: 200px;
+}
 .special-heading {
   color: #5e5e5e;
   font-size: 50px;
@@ -171,6 +176,7 @@ font-weight: 500;
       text-align: center;
       height: 180px;
   }
+  
 }
 
 .cyan {
@@ -282,7 +288,10 @@ h2 {
     text-align: center;
     margin: 10px;
   }
-  
+  .about{
+    padding: 0;
+    margin-bottom: -176px;
+  }
 }
 @media (max-width: 1430px){
   header{
@@ -394,7 +403,7 @@ header{
   .special-heading {
     font-size: 30px;
     position: relative;
-    
+
     top: 136px;
     margin-bottom: 158px;
 }
@@ -403,4 +412,68 @@ header{
     color: black;
   
   }
-}
+  
+  
+ /*why us*/
+ .whyus{
+   width: 100%;
+   min-height:100vh;
+
+ }
+ .container{
+   width: 80%;
+   display: block;
+   margin: auto;
+   padding-top: 100px;
+ }
+ .content-section{
+   float: left;
+   width: 55%;
+ }
+ .img-section{
+   float: right;
+   width: 40%;
+ }
+ .img-section img{
+   width: 130%;
+   height: auto;
+ }
+ .content-section .content h3{
+   margin-top: 20px;
+   color: rgba(255, 255, 255, 0.652);
+    font-size: 40px;
+  }
+ .content-section .content p{
+  margin-top: 63px;
+  font-size: 18px;
+  line-height: 2;
+ }
+ .color-span{
+   color: var(--main-color);
+ }
+ @media (max-width: 768px){
+  .container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .img-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .img-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+ }
